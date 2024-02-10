@@ -2,12 +2,12 @@ import Logo from "./Logo";
 import ThemeToggle from "./ThemeToggle";
 
 function Header() {
-  return <header className="sticky top-0 z-50">
-    <nav className="flex flex-row items-center p-6 mx-auto">
-        <Logo />
-        <div className="flex-1 flex items-center justify-end space-x-4">
+  return <header className="fixed top-0 z-50 w-full">
+    <nav className="flex self-end sm:items-center justify-end sm:justify-between p-8 mx-auto">
+      <div className="hidden sm:flex">
+          <Logo/>
+      </div>
           <ThemeToggle />
-        </div>
     </nav>
   </header>;
 
