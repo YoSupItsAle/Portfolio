@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Logo() {
   return <Link href="/"  prefetch={false} className="overflow-hidden">
-    <div className="flex item-center w-40 h-14">
+    <div className="flex item-center sm:w-[100px] sm:h-[100px] w-[70px] h-[70px]">
       <AspectRatio 
       ratio={16 / 9} 
       className="">
